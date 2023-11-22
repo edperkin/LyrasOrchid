@@ -101,9 +101,14 @@
     transition: all 0.3s ease; 
 }
 
-.fa-instagram-square{
+.fa-instagram{
     color: #cf3928;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.fa-instagram:hover{
+    color: #131313;
+    transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 960px) {
@@ -253,7 +258,7 @@
 
 .main__btn {
     font-size: 1rem;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    background-image: linear-gradient(to top, #f77062 0%, #cf3928 100%);
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -279,7 +284,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #4837ff;
+    background: #131313;
     transition: all 0.35s;
     border-radius: 4px;
 }
@@ -293,6 +298,7 @@
 }
 
 .main__img--container {
+    background-color: #e6d6cd;
     text-align: center;
 }
 
@@ -300,6 +306,19 @@
     height: 80%;
     width: 80%;
 }
+
+#main__album {
+    height: 50%;
+    width: 50%;
+}
+
+/* iFrame css */
+.main__cal--iframe {
+    border:solid 1px #777;
+    margin: 0 auto;
+    display: block;
+}
+
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
@@ -355,6 +374,45 @@
 }
 
 /* Services Section CSS */
+/* Style the form element with a border around it */
+form {
+    /* border: 2px solid #cf3928; */
+    border: none;
+    text-align: center;
+    width: 80%;
+    display: block;
+    
+  }
+  
+  /* Add some padding and a grey background color to containers */
+  .container {
+    padding: 20px;
+    background-color: #e6d6cd;
+  }
+  
+  /* Style the input elements and the submit button */
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #cf3928;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #131313;
+    transition: all 0.3s ease;
+  }
+  
 .services {
     background: #e6d6cd;
     display: flex;
@@ -364,8 +422,8 @@
 }
 
 .services h1 {
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff8177 0%, #ff876a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-color: #cf3928;
+    background-image: #cf3928;
     background-size: 100%;
     margin-bottom: 5rem;
     font-size: 2.5rem;
@@ -388,7 +446,7 @@
     width: 400px;
     border-radius: 4px;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), 
-    url("images/wave.jpg");
+    url("Images/Tides.png");
     background-size: cover;
     position: relative;
     color: #fff;
@@ -396,7 +454,12 @@
 
 .services__card:nth-child(2) {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), 
-    url("images/board.jpg");
+    url("Images/SeeYouThere.png");
+}
+
+.services__card:nth-child(3){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), 
+    url("Images/Time.png");
 }
 
 .services h2 {
@@ -417,7 +480,7 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
+    background: #cf3928;
     position: absolute;
     top: 440px;
     left: 30px;
@@ -429,6 +492,13 @@
     transform: scale(1.075);
     transition: 0.2 ease-in;
     cursor: pointer;
+}
+
+.services__card a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 960px) {
@@ -541,7 +611,6 @@ margin: 40px auto 0 auto;
     align-items: center;
     width: 240px;
 }
-
 .social__logo {
     color: #fff;
     justify-self: flex-start;
