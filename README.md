@@ -1,17 +1,5 @@
-# web-the-surf
-# web-the-surf
-# web-the-surf
-# web-the-surf
-https://www.youtube.com/watch?v=FazgJVnrVuI
+Learning project to create a website for my band to promote our latest music.
 
-https://fontawesome.com/
-
-https://materialdesignicons.com/
-
-https://undraw.co/illustrations
-
-https://www.pexels.com/
-
+Some inspo from the below sites:
 https://www.parquet-courts.com/
-
 https://www.altjband.com/
